@@ -27,7 +27,7 @@ export default function Login() {
       setErrors({ password: "Please enter password" });
     } else {
       try {
-        let response = await fetch("http://localhost:9999/api/website/login", {
+        let response = await fetch("https://shopcraft-backend-gitx06ssp-nitinsharma1059-1842s-projects.vercel.app/api/website/login", {
           headers: { "Content-Type": "application/json" },
           method: "POST",
           body: JSON.stringify({

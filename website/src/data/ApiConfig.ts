@@ -1,4 +1,4 @@
 export const ApiConfig = {
-    Endpoint : 'http://localhost:9999/api/website/',
+    Endpoint : ' https://shopcraft-backend-gitx06ssp-nitinsharma1059-1842s-projects.vercel.app/api/website/',
     CartLocalStorageKey : 'cart_items'
 }
