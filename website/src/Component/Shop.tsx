@@ -16,7 +16,7 @@ export default function Shop() {
   const [filterKey, setFilterKey] = useState<any>(null);
 
   const [currentPage, setCurrentPage] = useState(0);
-  const [skip, setSkip] = useState(0);
+  const [, setSkip] = useState(0);
   const limit = 15;
   const range = 2;
   const [paginated, setPaginated] = useState({

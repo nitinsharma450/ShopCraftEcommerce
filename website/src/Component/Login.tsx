@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { CartService } from "../lib/CartService";
 import { toast } from "react-toastify";
 import { FiMail, FiLock } from "react-icons/fi";
-import { CiLogin } from "react-icons/ci";
+
 import { LogIn } from "lucide-react";
 
 export default function Login() {
