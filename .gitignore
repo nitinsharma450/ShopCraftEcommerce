@@ -1,0 +1,30 @@
+# Environment files
+.env
+backend/.env
+website/.env
+admin-panel/.env
+
+# Node.js dependencies
+node_modules/
+backend/node_modules/
+website/node_modules/
+admin-panel/node_modules/
+
+# Build outputs
+dist/
+build/
+backend/dist/
+website/build/
+admin-panel/build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE/OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
