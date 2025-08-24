@@ -121,7 +121,7 @@ useEffect(()=>{
       </div>
 
       {/* Search Input */}
-     <div className="flex items-center justify-between w-full border border-gray-200 rounded-xl p-2 shadow-sm mb-10 p-4">
+     <div className="flex items-center justify-between w-full border border-gray-200 rounded-xl shadow-sm mb-10 p-4">
   {/* 🔍 Search Input */}
   <div className="flex items-center flex-1 px-2">
     <svg
@@ -162,7 +162,7 @@ useEffect(()=>{
     <option value="">ALL</option>
 
      {
-      categories?.map((value:any,index:any)=>(
+      categories?.map((value:any)=>(
         <option>{value.name}</option>
       ))
      }

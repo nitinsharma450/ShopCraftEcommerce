@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AuthenticationService } from "../../services/AuthenticationService ";
 import { Api } from "../../services/ApiService";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -10,7 +10,7 @@ export default function UserListing() {
   const [userList, setUserList] = useState<any[]>([]);
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
   const[loading,setLoading]=useState<any>(true)
-  const navigate = useNavigate();
+ 
 
   async function fetchUser() {
     setLoading(true)

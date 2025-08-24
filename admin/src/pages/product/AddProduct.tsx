@@ -9,7 +9,7 @@ import { ApiConfig } from "../../configs/ApiConfig";
 export default function AddProduct() {
   const navigate = useNavigate();
   const [productForm, setProductForm] = useState<any>({});
-  const [result, setResult] = useState<any>(null);
+  const [setResult] = useState<any>(null);
   const [categories, setCategories] = useState<any[]>([]);
   const {product_id}=useParams()
 
@@ -84,7 +84,7 @@ setProductForm(response.data)
     }
   }, []);
 
-  function setPreviewUrl(arg0: string) {
+  function setPreviewUrl(_arg0: string) {
     throw new Error("Function not implemented.");
   }
 
