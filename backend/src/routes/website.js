@@ -78,4 +78,4 @@ websiteRouter.post('/buynow/checkout',OrderPurchaseController.buynowCheckout)
 
 //payment
 
-websiteRouter.post('/createorder',OrderPurchaseController.createPayment)
+//websiteRouter.post('/createorder',OrderPurchaseController.createPayment)

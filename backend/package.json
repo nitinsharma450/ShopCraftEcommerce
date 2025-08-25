@@ -14,7 +14,6 @@
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.14.1",
     "nodemon": "^3.1.10",
-    "razorpay": "^2.9.6",
     "twilio": "^5.8.0"
   }
 }
