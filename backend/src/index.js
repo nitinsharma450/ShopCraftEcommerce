@@ -23,9 +23,9 @@ app.use('/api/website',websiteRouter);
 
 
 
-
-app.listen(ServerConfigs.Port, async function () {
-  console.log(
-    `your server is running on ${ServerConfigs.Host}:${ServerConfigs.Port}`
-  );
+const PORT = process.env.PORT || ServerConfigs.Port;
+app.listen(PORT, async () => {
+  console.log(`Server running on port ${PORT}`);
 });
+
+
