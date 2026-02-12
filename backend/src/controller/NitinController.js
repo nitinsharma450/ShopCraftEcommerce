@@ -1,5 +1,4 @@
-import { fileURLToPath } from "url";
-import { dirname, join } from "path";
+
 import jwt from "jsonwebtoken";
 import fs from "fs";
 import path from "path";

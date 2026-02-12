@@ -5,7 +5,7 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-app.use(cors({origin:'https://website-1ng2fukt0-nitinsharma1059-1842s-projects.vercel.app'}));
+app.use(cors());
 
 export class OrderPurchaseController {
   static async order(req, res) {

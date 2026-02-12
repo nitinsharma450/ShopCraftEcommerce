@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import { SecretConfigs } from "../configs/SecretConfigs.js";
 import { db } from "../connection.js";
-import { response } from "express";
+
 
 export class AdminController {
  static async adminLogin(req, res) {

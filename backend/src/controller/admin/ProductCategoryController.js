@@ -1,8 +1,7 @@
-import fs from "fs";
-import path from "path";
+
 
 import { db } from "../../connection.js";
-import { ServerConfigs } from "../../configs/ServerConfigs.js";
+
 
 export class ProductCategoryController {
   static async createCategory(req, res) {
