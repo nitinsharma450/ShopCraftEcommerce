@@ -1,0 +1,52 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Nitin@9811
+      MYSQL_DATABASE: social
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ecommerce_backend
+    ports:
+      - "9999:9999"
+    depends_on:
+      - mysql
+    env_file:
+      - ./backend/.env
+    restart: always
+
+  admin:
+    build:
+      context: ./admin
+      dockerfile: Dockerfile
+    container_name: ecommerce_admin
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    restart: always
+
+  userPortal:
+    build:
+      context: ./website
+      dockerfile: Dockerfile
+    container_name: ecommerce_user_portal
+    ports:
+      - "5174:5174"
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  mysql_data:

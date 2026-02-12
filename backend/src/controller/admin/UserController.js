@@ -30,14 +30,15 @@ export class UserController {
   }
 
   static async searchById(req, res) {
-  const {userId} = req.body;
+  let {userId} = req.body;
+  console.log(userId)
 
   if (!userId) {
     return res.status(400).send({ message: "userId is required" });
   }
 
   try {
-    const [response] = await db.query('SELECT * FROM user WHERE id = ?', [userId]);
+    let [response] = await db.query('SELECT * FROM user WHERE id = ?', [userId]);
 
 
 

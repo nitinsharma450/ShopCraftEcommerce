@@ -60,7 +60,7 @@ export default function Shop() {
     setLoading(true);
 
     try {
-      const response = await fetch(`https://shopcraft-backend-gitx06ssp-nitinsharma1059-1842s-projects.vercel.app/api/website/getproduct`, {
+      const response = await fetch(`http://localhost:9999/api/website/getproduct`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

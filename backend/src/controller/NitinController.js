@@ -8,40 +8,8 @@ import { db } from "../connection.js";
 import { SecretConfigs } from "../configs/SecretConfigs.js";
 import { ServerConfigs } from "../configs/ServerConfigs.js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-
-
-export async function NitinController2(req, res, next) {
-  var [records] = await db.query("select * from user");
-  console.log(records);
-  res.send(records);
-}
-
-
-
-// export class MyClass{
-//   my_variable = 5;
-//   myVariable = 5;
-
-//   myFunction = (){
-
-//   }
-// }
-
 export function InsertController(req, res) {
   const form = req.query;
-
-  // const my_snake_case_variable = false;
-  // const myFunction = async ()=>{
-
-  //   function myAnotherfunction(){
-
-  //   }
-  // }
-
-
 
   const success = db.query("insert into user set id=?, email=?,gender=?", [
     form.id,

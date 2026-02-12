@@ -1,7 +1,7 @@
 import express from "express";
 import {
   
-  NitinController2,
+  // NitinController2,
   
   users,
   InsertController,
@@ -44,7 +44,7 @@ websiteRouter.use(UserGuardMiddleware);
 
 //websiteRouter.get("/current-profile", currentProfile);
 
-websiteRouter.get("/home", NitinController2);
+// websiteRouter.get("/home", NitinController2);
 
 
 websiteRouter.post("/user", UserController.searchById);
