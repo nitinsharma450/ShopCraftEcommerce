@@ -37,7 +37,7 @@ services:
       - backend
     restart: always
 
-  userPortal:
+  userportal:
     build:
       context: ./website
       dockerfile: Dockerfile
