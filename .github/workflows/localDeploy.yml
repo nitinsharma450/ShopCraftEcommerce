@@ -33,7 +33,7 @@ jobs:
       #   run : docker compose down
 
       - name : run docker compose
-        run : docker compose up 
+        run : docker compose up -d
 
       
 
