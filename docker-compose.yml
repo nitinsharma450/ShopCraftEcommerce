@@ -22,8 +22,6 @@ services:
       - "9999:9999"
     depends_on:
       - mysql
-    env_file:
-      - ./backend/.env
     restart: always
 
   admin:
