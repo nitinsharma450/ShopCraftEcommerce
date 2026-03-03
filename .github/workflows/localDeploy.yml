@@ -26,14 +26,13 @@ jobs:
           echo "TWILIO_AUTH_TOKEN=${{ secrets.TWILIO_AUTH_TOKEN }}" >> .env
           echo "TWILIO_PHONE_NUMBER=${{secrets.TWILIO_PHONE_NUMBER}}" >> .env
 
-      - name : build docker compose
-        run : echo 'building docker images' && docker compose build 
+      
 
       # - name : down containers
       #   run : docker compose down
 
       - name : run docker compose
-        run : docker compose up -d
+        run : docker compose up --build
 
       
 
