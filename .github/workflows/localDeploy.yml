@@ -18,6 +18,12 @@ jobs:
       - name : build website
         run : cd website && npm install && npm run build
 
+      - name: Set environment variables
+        run: |
+          echo "TWILIO_ACCOUNT_SID=${{ secrets.TWILIO_ACCOUNT_SID }}" >> .env
+          echo "TWILIO_AUTH_TOKEN=${{ secrets.TWILIO_AUTH_TOKEN }}" >> .env
+          echo "TWILIO_PHONE_NUMBER=${{secrets.TWILIO_PHONE_NUMBER}}" >> .env
+
       - name : build docker compose
         run : echo 'building docker images' && docker compose build 
 
