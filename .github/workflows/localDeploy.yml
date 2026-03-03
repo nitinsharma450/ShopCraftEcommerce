@@ -1,0 +1,34 @@
+name : CICD
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name : build adminPanel
+        run: cd admin && npm install && npm run build
+        
+      - name : build website
+        run : cd website && npm install && npm run build
+
+      - name : build docker compose
+        run : echo 'building docker images' && docker compose build 
+
+      - name : down containers
+        run : docker compose down
+
+      - name : run docker compose
+        run : docker compose up -d
+
+      
+
+       
+
+    
