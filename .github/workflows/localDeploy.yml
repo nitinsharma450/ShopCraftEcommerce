@@ -14,15 +14,15 @@ jobs:
 
       - name : build adminPanel
         run: cd admin && npm install && npm run build
-        
+
       - name : build website
         run : cd website && npm install && npm run build
 
       - name : build docker compose
         run : echo 'building docker images' && docker compose build 
 
-      - name : down containers
-        run : docker compose down
+      # - name : down containers
+      #   run : docker compose down
 
       - name : run docker compose
         run : docker compose up -d
