@@ -1,4 +1,4 @@
-
+version: "3.8"
 
 services:
   mysql:
@@ -6,7 +6,7 @@ services:
     container_name: mysql_db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: Nitin@9811
+      MYSQL_ROOT_PASSWORD: "Nitin@9811"
       MYSQL_DATABASE: social
     ports:
       - "3307:3306"
@@ -17,7 +17,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-      image: nitinsharma/ecommerce_backend:latest
+    image: nitinsharma/ecommerce_backend:latest
     container_name: ecommerce_backend
     ports:
       - "9999:9999"
@@ -46,7 +46,6 @@ services:
     depends_on:
       - backend
     restart: always
-
 
 volumes:
   mysql_data:
