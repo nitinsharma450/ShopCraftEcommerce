@@ -17,6 +17,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+      image: nitinsharma/ecommerce_backend:latest
     container_name: ecommerce_backend
     ports:
       - "9999:9999"
