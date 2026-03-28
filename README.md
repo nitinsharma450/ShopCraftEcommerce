@@ -3,11 +3,11 @@ It supports Admin Panel, User Operations, Product Management, Cart System, and O
 
 🚀 Features
 🔐 Authentication & Authorization
-Admin Signup & Login
-User Signup & Login
-JWT-based authentication
-Role-based access control (Admin & User)
-Protected routes using middleware
+- Admin Signup & Login
+- User Signup & Login
+- JWT-based authentication
+- Role-based access control (Admin & User)
+- Protected routes using middleware
 
 🛍️ Product Management (Admin)
 Create, update, delete products
