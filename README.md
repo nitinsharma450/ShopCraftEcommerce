@@ -87,6 +87,7 @@ POST /signup
 
 📦 Products
 POST /product/create
+
 POST /product/update
 POST /product/remove
 POST /product/searchAll
