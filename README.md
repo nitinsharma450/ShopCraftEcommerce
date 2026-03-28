@@ -51,33 +51,22 @@ Middleware: Custom Guard Middleware
 File Upload: express-fileupload
 CORS Handling: cors
 
-📁 Project Structure
-project-root/
+shopcraft/
 │
-├── configs/
-│   ├── ServerConfigs.js
-│   └── SecretConfigs.js
+├── frontend/          # React Frontend
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   └── services/
 │
-├── controllers/
-│   ├── admin/
-│   ├── website/
-│   └── ...
+├── backend/           # Node.js Backend
+│   ├── configs/
+│   ├── controllers/
+│   ├── routes/
+│   ├── middlewares/
+│   └── database/
 │
-├── middlewares/
-│   ├── AdminGuardMiddleware.js
-│   └── UserGuardMiddleware.js
-│
-├── routes/
-│   ├── admin.js
-│   └── website.js
-│
-├── database/
-│   └── db.js
-│
-├── public/
-│
-├── app.js
-└── package.json
+└── README.md
 
 🔌 API Routes Overview
 🛠️ Admin Routes (/api/admin)
@@ -139,38 +128,27 @@ Protects admin routes
 UserGuardMiddleware
 Verifies User JWT token
 Protects user routes
-🗄️ Database Configuration
-const db = await mysql.createConnection({
-  host: "mysql",
-  user: "root",
-  password: "your_password",
-  database: "social",
-  port: 3306,
-});
 
-Auto-retry connection if DB is unavailable
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/shopcraft-backend.git
-cd shopcraft-backend
-2️⃣ Install Dependencies
+
+🖥️ Setup Instructions
+
+1️⃣ Clone Repository
+git clone https://github.com/your-username/shopcraft.git
+cd shopcraft
+
+2️⃣ Setup Backend
+cd backend
 npm install
-3️⃣ Configure Environment
-
-Update:
-
-Database credentials
-JWT secrets
-Server configs
-4️⃣ Run Server
 npm start
 
-Server will run on:
+3️⃣ Setup Frontend
+cd frontend
+npm install
+npm run dev
+Update:
 
-http://localhost:<PORT>
-🔑 Environment Variables (Recommended)
-
-Create .env file:
+⚙️Environment Variables
+Create .env in backend:
 
 PORT=5000
 JWT_SECRET=your_user_secret
@@ -179,6 +157,7 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=social
+
 
 📌 Future Improvements
 Payment gateway integration (Razorpay/Stripe)
