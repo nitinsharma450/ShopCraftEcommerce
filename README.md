@@ -132,37 +132,37 @@ shopcraft/
 🖥️ Setup Instructions
 
 1️⃣ Clone Repository
-git clone https://github.com/your-username/shopcraft.git
-cd shopcraft
+- git clone https://github.com/your-username/shopcraft.git
+- cd shopcraft
 
 2️⃣ Setup Backend
-cd backend
-npm install
-npm start
+- cd backend
+- npm install
+- npm start
 
 3️⃣ Setup Frontend
-cd frontend
-npm install
-npm run dev
-Update:
+- cd frontend
+- npm install
+- npm run dev
+
 
 ⚙️Environment Variables
 Create .env in backend:
 
-PORT=5000
-JWT_SECRET=your_user_secret
-JWT_ADMIN_SECRET=your_admin_secret
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=social
+- PORT=5000
+- JWT_SECRET=your_user_secret
+- JWT_ADMIN_SECRET=your_admin_secret
+- DB_HOST=localhost
+- DB_USER=root
+- DB_PASSWORD=your_password
+- DB_NAME=social
 
 
 📌 Future Improvements
-Payment gateway integration (Razorpay/Stripe)
-Admin dashboard analytics
-AI-based product recommendations
-Caching with Redis
+- Payment gateway integration (Razorpay/Stripe)
+- Admin dashboard analytics
+- AI-based product recommendations
+- Caching with Redis
 
 Contributions are welcome!
 Feel free to fork this repo and submit a PR.
