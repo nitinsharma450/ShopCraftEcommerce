@@ -1,8 +1,8 @@
-🛒 ShopCraft – Full Stack E-Commerce Platform
+# 🛒 ShopCraft – Full Stack E-Commerce Platform
 
-ShopCraft is a full-stack e-commerce web application built with modern technologies, featuring a complete Admin Dashboard + User Shopping Experience.
+## ShopCraft is a full-stack e-commerce web application built with modern technologies, featuring a complete Admin Dashboard + User Shopping Experience.
 
-It includes:
+### It includes:
 
 🖥️ Frontend (React + Tailwind)
 ⚙️ Backend (Node.js + Express)
