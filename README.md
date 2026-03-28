@@ -1,5 +1,15 @@
-A scalable and secure backend for an e-commerce platform (ShopCraft) built using Node.js, Express, MySQL, and JWT Authentication.
-It supports Admin Panel, User Operations, Product Management, Cart System, and Order Processing.
+🛒 ShopCraft – Full Stack E-Commerce Platform
+
+ShopCraft is a full-stack e-commerce web application built with modern technologies, featuring a complete Admin Dashboard + User Shopping Experience.
+
+It includes:
+
+🖥️ Frontend (React + Tailwind)
+⚙️ Backend (Node.js + Express)
+🗄️ Database (MySQL)
+🔐 Secure Authentication (JWT)
+
+
 
 🚀 Features
 🔐 Authentication & Authorization
