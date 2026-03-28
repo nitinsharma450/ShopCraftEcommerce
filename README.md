@@ -10,124 +10,123 @@ It supports Admin Panel, User Operations, Product Management, Cart System, and O
 - Protected routes using middleware
 
 🛍️ Product Management (Admin)
-Create, update, delete products
-Search and filter products
-Product category assignment
-Product count tracking
+- Create, update, delete products
+- Search and filter products
+- Product category assignment
+- Product count tracking
 
 📂 Product Categories
-Create, update, delete categories
-Search & filter categories
-Suggest categories
+- Create, update, delete categories
+- Search & filter categories
+- Suggest categories
 
 👤 User Management (Admin)
-Create, update, delete users
-Search users
-View user details
+- Create, update, delete users
+- Search users
+- View user details
 
 🌐 Website APIs (User Side)
-Browse products
-View product details
-Filter/search products
-Category-based search
+- Browse products
+- View product details
+- Filter/search products
+- Category-based search
 
 🛒 Cart System
-Add to cart
-Update cart
-Sync cart
-View cart
+- Add to cart
+- Update cart
+- Sync cart
+- View cart
 
 📦 Order Management
-Checkout from cart
-Buy now functionality
-Order tracking
-Cancel order
+- Checkout from cart
+- Buy now functionality
+- Order tracking
+- Cancel order
 
 🏗️ Tech Stack
-Backend: Node.js, Express.js
-Database: MySQL
-Authentication: JWT (JSON Web Tokens)
-Middleware: Custom Guard Middleware
-File Upload: express-fileupload
-CORS Handling: cors
+- Backend: Node.js, Express.js
+- Database: MySQL
+- Authentication: JWT (JSON Web Tokens)
+- Middleware: Custom Guard Middleware
+- File Upload: express-fileupload
+- CORS Handling: cors
 
-shopcraft/
+shopcraft/  
 │
-├── frontend/          # React Frontend
-│   ├── components/
-│   ├── pages/
-│   ├── context/
-│   └── services/
+├── frontend/            # React Frontend
+│   ├── components/  
+│   ├── pages/  
+│   ├── context/    
+│   └── services/  
 │
-├── backend/           # Node.js Backend
-│   ├── configs/
-│   ├── controllers/
-│   ├── routes/
-│   ├── middlewares/
-│   └── database/
+├── backend/             # Node.js Backend
+│   ├── configs/  
+│   ├── controllers/  
+│   ├── routes/  
+│   ├── middlewares/  
+│   └── database/  
 │
-└── README.md
+└── README.md  
 
 🔌 API Routes Overview
-🛠️ Admin Routes (/api/admin)
-🔑 Auth
-POST /login
-POST /signup
+- 🛠️ Admin Routes (/api/admin)
+- 🔑 Auth
+- POST /login
+- POST /signup
 
 📦 Products
-POST /product/create
-
-POST /product/update
-POST /product/remove
-POST /product/searchAll
-POST /product/searchById
-POST /product/filter
+- POST /product/create
+- POST /product/update
+- POST /product/remove
+- POST /product/searchAll
+- POST /product/searchById
+- POST /product/filter
 
 📂 Categories
-POST /product-category/create
-POST /product-category/update
-POST /product-category/remove
-POST /product-category/search
+- POST /product-category/create
+- POST /product-category/update
+- POST /product-category/remove
+- POST /product-category/search
 
 👤 Users
-POST /user/create
-POST /user/update
-POST /user/remove
-POST /user/search
+- POST /user/create
+- POST /user/update
+- POST /user/remove
+- POST /user/search
 
 🌐 Website Routes (/api/website)
 🔑 Auth
-POST /signup
-POST /login
+- POST /signup
+- POST /login
 
 🛍️ Products
-GET /product/detail/:id
-GET /product/search/:category
-POST /product/filter
+- GET /product/detail/:id
+- GET /product/search/:category
+- POST /product/filter
 
 🛒 Cart
-POST /cart/add
-POST /cart/update
-POST /cart/search
+- POST /cart/add
+- POST /cart/update
+- POST /cart/search
 
 📦 Orders
-POST /cartorder/checkout
-POST /purchase/checkout
-POST /buynow/checkout
+- POST /cartorder/checkout
+- POST /purchase/checkout
+- POST /buynow/checkout
 
 👤 User
-POST /user
-POST /userprofileupdate
-POST /user/myorders
-POST /user/cancelorder
+- POST /user
+- POST /userprofileupdate
+- POST /user/myorders
+- POST /user/cancelorder
 
 🔐 Middleware
-AdminGuardMiddleware
-Verifies Admin JWT token
-Protects admin routes
-UserGuardMiddleware
-Verifies User JWT token
-Protects user routes
+- AdminGuardMiddleware
+- Verifies Admin JWT token
+- Protects admin routes
+- UserGuardMiddleware
+- Verifies User JWT token
+- Protects user routes
 
 
 🖥️ Setup Instructions
